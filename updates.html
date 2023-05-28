@@ -1,5 +1,6 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="./style/style.css"
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link href="./style/prism.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="site-header">
@@ -15,52 +16,38 @@
     </header>
     <main class="page-content">
       <div class="wrapper">
-        <div class="page-content-header">
-          <p>Hello! Welcome to my page. I have a list of projects I am working on and some contact information at the bottom. Please reach out if you would like to speak about a potential role!</p>
+        <div class="article-list">
+            <div class="article">
+                <div class="article-date">
+                    <h2>May 27<br>2023</h2>
+                </div>
+                <div class="article-content">
+                    <h2>Setting the Scene</h2>
+                    <p>Creating a personal website and portfolio has been a project I have put off for a long time, with justifications that made sense at the time. I would like this to be a place for me to demonstrate past works, my current endeavors, and my future plans. I have many different ideas I want to explore, and I believe that thoroughly detailing them will benefit me, and may prove informative for...someone! Maybe. I will test the prism javascript highlighter now.</p>
+                    <pre><code class="language-css">test { result: did it work? } </code></pre>
+                    <h3>Current Plans</h3>
+                    <p>I would like my work here to be consistent so I can see my progress in real time. As I learn new skills I want to document them here for my own posterity and so they might help someone else. Some ideas I would like to pursue, listed from least to most complex:</p>
+                    <ul>
+                      <li>Create a style guide for this website</li>
+                      <li>Write my first ever guide to something, no matter how small</li>
+                      <li>Write a python script that takes a written article and formats it into a html snippet like this. Not sure this is worth the time...</li>
+                      <li>Format site to work on mobile</li>
+                      <li>Learn about and implement Group Policies for VM simulated clients</li>
+                      <li>Experiment with the MERN stack...many things I would like to create</li>
+                    </ul>
+                    <p>Just writing these ideas down is energizing. The most daunting step is the first one; consistency will make everything after that much easier.</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-date">
+                    <h2>May 27<br>2023</h2>
+                </div>
+                <div class="article-content">
+                    <p>generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                </div>
+            </div>      
         </div>
-  
-          <div class="project-list">
-            <h2 class="projects-headline">Current Projects</h2>
-            <div class="project">
-              <div class="project-text">
-                <h3 class="project-title">KanDid</h3>
-                <p>A kanban application using the MERN stack</p>
-              </div>
-              <div class="project-image">
-                
-              </div>
-            </div>
-            <div class="project">
-              <div class="project-text">
-                <h3 class="project-title">Game of Thrones Policy Organization</h3>
-              <p>A windows domain simulating Westeros</p>
-              </div>
-              <div class="project-image">
-                
-              </div>
-            </div>
-            <h2 class="projects-headline">Previous Projects</h2>
-            <div class="project">
-              <div class="project-text">
-                <h3 class="project-title">William & Mary Special Collections Library Exhibits</h3>
-                <a href="https://exhibits.libraries.wm.edu/exhibits"><p>https://exhibits.libraries.wm.edu/exhibits</p></a>
-              </div>
-              <div class="project-image">
-                <a href="https://exhibits.libraries.wm.edu/exhibits"><img src="./style/images/W&M-logo.png"></a>
-              </div>
-            </div>
-            <div class="project">
-              <div class="project-text">
-                <h3 class="project-title">AID DATA S.D.G. Machine Learning Classification</h3>
-                <p>A webapp that automatically classifies sustainable development goals</p>
-              </div>
-              <div class="project-image">
-                <a href="https://www.aiddata.org/"><img src="./style/images/AIDDATA_Logo.png"></a>
-              </div>
-            </div>
-          </div> 
-    
-      </div>
+      </div>    
     </main>
     <footer class="site-footer">
       <div class="wrapper">
@@ -76,4 +63,5 @@
           </div>
       </div>
     </footer>
+    <script src="prism.js"></script>
   </body>

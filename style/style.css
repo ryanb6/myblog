@@ -41,10 +41,17 @@ a:active {
 }
 p {
     display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color:#006CB1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .wrapper {
     max-width: 740px;
@@ -124,9 +131,22 @@ a:hover > .current-page{
     align-items: center;
 }
 
-.project-text {
+.article-list {
+    display: flex;
+    flex-direction: column;
 }
 
+.article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-date {
+    min-width: 130px;
+}
+ 
+.article-content {
+}
 
 footer {
     padding-bottom: 30px;
