@@ -1,6 +1,16 @@
 <head>
   <link rel="stylesheet" type="text/css" href="./style/style.css">
   <link href="./style/prism.css" rel="stylesheet" type="text/css">
+  <link href="./style/prism.css" rel="stylesheet" type="text/css">
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+  <script> 
+    $(function(){ 
+      $("#footer").load("footer.html"); 
+    });
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -29,19 +39,6 @@
       </div>
     </div>
   </main>
-  <footer class="site-footer">
-    <div class="wrapper">
-        <h4 class='footer-heading'>Ryan's Works</h4>
-        <div class="footer-col-wrapper">
-            <div class="footer-col-1">
-              <img class="proton-logo" src="./style/images/Mail-logomark-transparent.png"><p>ryanb6@proton.me</p>
-            </div>
-
-            <div class="footer-col-3">
-                <p>Currently looking for an IT Support or Web Development role!</p>
-            </div>
-        </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
   <script src="prism.js"></script>
 </body>
