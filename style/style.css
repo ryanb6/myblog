@@ -45,6 +45,9 @@ p {
     margin-bottom: 10px;
 }
 
+.centered-text {
+    text-align: center;
+}
 h2 {
     color:#006CB1;
 }
@@ -136,6 +139,21 @@ a:hover > .current-page{
     flex-direction: column;
 }
 
+.project-page-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-page-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-item-image {
+    padding-top: 10px;
+    min-width: 240px;
+}
+
 .article {
     display: flex;
     justify-content: space-between;
@@ -143,9 +161,6 @@ a:hover > .current-page{
 
 .article-date {
     min-width: 130px;
-}
- 
-.article-content {
 }
 
 footer {
