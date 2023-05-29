@@ -5,7 +5,8 @@ color-list {
     color: #8F5D87;
     color: #C7254E;
     color: #09204B;
-    color: #006CB1;
+    color: #0078c2;
+    color: #1c2833;
 
 
 }
@@ -19,13 +20,13 @@ body {
     flex-direction: column;
     margin: 0px;
     padding: 0px;
-    background-color: #09204B;
+    background-color: #1c2833;
     
 }
 
 
 a{
-    color:#006CB1;
+    color:#0078c2;
 }
 
 a:hover {
@@ -49,7 +50,7 @@ p {
     text-align: center;
 }
 h2 {
-    color:#006CB1;
+    color:#0078c2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -90,7 +91,7 @@ header {
 .site-title{
     font-size: 25px;
     font-weight: 600;
-    color: #006CB1;
+    color: #0078c2;
     line-height: 54px;
     margin-bottom: 0px;
 }
@@ -119,7 +120,7 @@ main {
 }
 
 .current-page {
-    background-color: #006CB1;
+    background-color: #0078c2;
     color:#BBB;
     border-radius: 20px;
 }
@@ -163,6 +164,9 @@ a:hover > .current-page{
     min-width: 130px;
 }
 
+.article-content-img{
+    max-width: 100%;
+}
 footer {
     padding-bottom: 30px;
     color: #BBB;
@@ -193,14 +197,14 @@ footer {
 .proton-logo {
     width: 50px;
     height: 50px;
-
-
 }
 
-.project img {
-    padding-top: 20px;
+.project-img {
+    padding-top: 17px;
 }
-img {
-
+.sdgimg {
+    max-width: 100%;
+}
+.sideimg {
     max-width: 200px;
 }

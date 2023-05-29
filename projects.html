@@ -13,13 +13,13 @@
 <body>
   <header class="site-header">
     <div class="wrapper">
-        <a class="site-title" href="index.html">Ryan's Works</a>
-        <nav class="site-nav">
-            <a class='page-link home' href="index.html">Home</a>
-            <a class='page-link current-page' href="projects.html">Projects</a>
-            <a class='page-link' href="writings.html">Writings</a>
-            <a class='page-link' href="updates.html">Updates</a>
-        </nav>
+      <a class="site-title" href="index.html">Ryan's Works</a>
+      <nav class="site-nav">
+        <a class='page-link home' href="index.html">Home</a>
+        <a class='page-link current-page' href="projects.html">Projects</a>
+        <a class='page-link' href="writings.html">Writings</a>
+        <a class='page-link' href="updates.html">Updates</a>
+      </nav>
     </div>
   </header>
   <main class="page-content">
@@ -28,20 +28,40 @@
         <h1 class="centered-text">Previous Projects</h1>
         <div class="project-page-item">
           <div class="project-item-image">
-              <img src="./style/images/AIDDATA_Logo.png">
+            <img class="sideimg" src="./style/images/AIDDATA_Logo.png">
           </div>
-          <div class="project-item-content">
-              <h2>Sustainable Development Goals Machine Learning Classification</h2>
-              <p>Creating a personal website and portfolio has been a project I have put off for a long time, with justifications that made sense at the time. I would like this to be a place for me to demonstrate past works, my current endeavors, and my future plans. I have many different ideas I want to explore, and I believe that thoroughly detailing them will benefit me, and may prove informative for...someone! Maybe. I will test the prism javascript highlighter now.</p>
+          <div id ="aiddata" class="project-item-content">
+            <h2>Sustainable Development Goals Machine Learning Classification</h2>
+            <h3>Overview</h3>
+            <p><a href="https://www.aiddata.org/">AidData</a> is an organization based out of William & Mary's <a href="https://www.wm.edu/offices/global-research/">Global Research Institute</a> that uses granular data and innovative tools to measure the impacts of worldwide policies and investments. I was brought on as an intern to <em>create a machine learning solution for classification of Sustainable Development Goals</em>.</p>
+            <h3>What are Sustainable Development Goals?</h3>
+            <p>Sustainable Development Goals (SDGs) were established by the United Nations in 2015 to serve as a framework for identifying the ways countries can categorize the environmental, social and economic aspects of <a href="https://en.wikipedia.org/wiki/Sustainable_development">sustainable development</a>.</p>
+            <img class="sgdimg" src="./style/Sustainable_Development_Goals.svg">
+            <p>AidData had tons of spreadsheets with thousands of donations and other financial packages from countries all over the world, and these would need to be classified into one of the 17 SDGs for better bookkeeping and analysis of overarching trends. Typically done by hand, this would take a large amount of man hours for initial classification and even more for confirmation that classification was correct. My job was to simplify this process with machine learning.</p>
+            <h3>Technology Used</h3>
+            <ul>
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Tensorflow</li>
+              <li>Flask</li>
+            </ul>
           </div>
         </div>
         <div class="project-page-item">
           <div class="project-item-image">
-              <img src="./style/images/W&M-logo.png">
+            <img class="sideimg" src="./style/images/W&M-logo.png">
           </div>
-          <div class="project-item-content">
-              <h2>William and Mary Special Collections Exhbitis Website</h2>
-              <p>Creating a personal website and portfolio has been a project I have put off for a long time, with justifications that made sense at the time. I would like this to be a place for me to demonstrate past works, my current endeavors, and my future plans. I have many different ideas I want to explore, and I believe that thoroughly detailing them will benefit me, and may prove informative for...someone! Maybe. I will test the prism javascript highlighter now.</p>
+          <div id="wmwebsite" class="project-item-content">
+            <h2>William and Mary Special Collections Exhibits Website</h2>
+            <h3>Overview</h3>
+            <p>I was selected as an intern to create a dynamic and responsive website for William & Mary's <a href="https://exhibits.libraries.wm.edu/exhibits">Special Collections Exhibits</a>. This website was built as an offshoot of the Library's LAMP stack website and used Drupal as a content management system, so that anyone could add new exhbit entries without having to code anything.</p>
+            <h3>Technology Used</h3>
+            <ul>
+              <li>HTML</li>
+              <li>SASS</li>
+              <li>PHP</li>
+              <li>Drupal</li>
+            </ul>
           </div>
         </div>      
       </div> 
