@@ -16,7 +16,10 @@ newGridBtn.addEventListener('click', () => {
 boxInput.addEventListener('input', () => {
     boxNum.textContent=boxInput.value;
     squareNum = boxInput.value;
-    console.log(squareNum)
+    while(sketchpadContainer.firstChild){
+        sketchpadContainer.removeChild(sketchpadContainer.lastChild)
+    }
+    createSketchpad(squareNum)
 })
 
 console.log(sketchpadContainer.clientWidth)
