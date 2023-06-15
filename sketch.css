@@ -27,3 +27,7 @@
 .hovered{
     background-color: black;
 }
+
+.number {
+    padding-left: 10px;
+}

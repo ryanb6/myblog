@@ -2,12 +2,26 @@ let squareNum = 8;
 let sketchpadContainer = document.querySelector('#sketchpad-wrapper')
 let boxInput = document.querySelector('#box-num')
 let boxNum = document.querySelector('.number')
-boxInput.addEventListener('input', () => {
+let newGridBtn = document.querySelector('#new-grid-btn')
+let gridSize = sketchpadContainer.clientWidth
+
+newGridBtn.addEventListener('click', () => {
+    while(sketchpadContainer.firstChild){
+        sketchpadContainer.removeChild(sketchpadContainer.lastChild)
+    }
+    createSketchpad(squareNum)
 
 })
+
+boxInput.addEventListener('input', () => {
+    boxNum.textContent=boxInput.value;
+    squareNum = boxInput.value;
+    console.log(squareNum)
+})
+
 console.log(sketchpadContainer.clientWidth)
 //let boxWidth = sketchpadContainer.width / squareNum  
-let gridSize = sketchpadContainer.clientWidth
+
 
 console.log(gridSize / squareNum)
 
