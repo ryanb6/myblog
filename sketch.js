@@ -2,14 +2,20 @@ let squareNum = 8;
 let sketchpadContainer = document.querySelector('#sketchpad-wrapper')
 let boxInput = document.querySelector('#box-num')
 let boxNum = document.querySelector('.number')
-let newGridBtn = document.querySelector('#new-grid-btn')
+let colorTypeBtn = document.querySelector('#color-type-btn')
+let colorTypeText = document.querySelector('.color-type')
+let colorType = 'black'
 let gridSize = sketchpadContainer.clientWidth
 
-newGridBtn.addEventListener('click', () => {
-    while(sketchpadContainer.firstChild){
-        sketchpadContainer.removeChild(sketchpadContainer.lastChild)
+colorTypeBtn.addEventListener('click', () => {
+    if(colorType === 'black'){
+        colorType = 'random'
+        colorTypeText.textContent = 'Random'
+    }else if(colorType === 'random'){
+        colorType = 'black'
+        colorTypeText.textContent = 'Black'
     }
-    createSketchpad(squareNum)
+
 
 })
 
@@ -28,13 +34,23 @@ console.log(sketchpadContainer.clientWidth)
 
 console.log(gridSize / squareNum)
 
+function random_rgb() {
+    let r =  Math.floor(Math.random() * 256)
+    let g =  Math.floor(Math.random() * 256)
+    let b =  Math.floor(Math.random() * 256)
+    return `rgb(${r}, ${g}, ${b})`
+}
 
 function createDiv(size){
     let div = document.createElement('div')
     div.classList.add('box')
     div.setAttribute('style',`width: ${size}; height: ${size}`)
     div.addEventListener('mouseover', () => {
-        div.classList.add('hovered');
+        if(colorType === 'black'){
+            div.classList.add('hovered');
+        }else if(colorType === 'random'){
+            div.style.backgroundColor = random_rgb();
+        }
     })
     return div
 }
